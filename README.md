@@ -1,7 +1,6 @@
 # mongoose-poll
 
-Mongoose plugin to polling models
-[Mongoose]( http://mongoosejs.com/ "リンクのタイトル")
+[Mongoose]( http://mongoosejs.com/ "リンクのタイトル") plugin to polling models
 
 # Usage
     var poll = require('mongoose-poll');
