@@ -1,0 +1,24 @@
+{
+  "name": "mongoose-poll",
+  "version": "0.0.0",
+  "description": "plugin to polling mongoose",
+  "main": "lib/plugin.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "coffee -co lib src"
+  },
+  "dependencies": {
+    "underscore": "*",
+    "coffee-script": "*"
+  },
+  "devDependencies": {
+    "mongoose": "*",
+    "vows": "*",
+    "assert": "*",
+    "sinon": "*",
+    "async": "*"
+  },
+  "repository": "",
+  "author": "Ryota Suzuki",
+  "license": "BSD"
+}
