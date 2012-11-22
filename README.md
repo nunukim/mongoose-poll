@@ -30,6 +30,6 @@
     var doc = new Model( {
       state: 'init',
       scope: 'scope1',
-      at: new Date( (new Date).getTime()+5000)
+      at: new Date(Date.now() + 5000)
     });
     doc.save()
