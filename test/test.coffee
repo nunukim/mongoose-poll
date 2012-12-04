@@ -71,9 +71,8 @@ vows.describe('mongoose-poll').addBatch(
       undefined
 
     'found and drain': ->
-      assert.ok @drained.calledTwice
-      assert.ok @drained.firstCall.calledWith(0)
-      assert.ok @drained.secondCall.calledWith(1)
+      assert.ok @drained.calledOnce
+      assert.ok @drained.firstCall.calledWith(1)
       assert.ok @cb.withArgs(sinon.match(name: 'obj4')).calledOnce
 
 ).export(module)

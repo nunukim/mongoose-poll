@@ -23,6 +23,7 @@ module.exports = class Watcher extends require('events').EventEmitter
 
   _check: (i)->
     @checking = yes
+    @emit 'checking'
     @checker (err, data)=>
       if err?
         @checking = no
@@ -32,4 +33,4 @@ module.exports = class Watcher extends require('events').EventEmitter
         @_check(i+1)
       else
         @checking = no
-        @emit 'drain', i
+        @emit 'drain', i if i
