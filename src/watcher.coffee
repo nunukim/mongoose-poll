@@ -29,7 +29,7 @@ module.exports = class Watcher extends require('events').EventEmitter
         @checking = no
         @emit 'error', error
       else if data?
-        @emit 'found', if i is 0
+        @emit 'found' if i is 0
         @emit 'data', data, i
         @_check(i+1)
       else
