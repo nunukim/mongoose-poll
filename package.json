@@ -8,7 +8,7 @@
     "build": "coffee -co lib src"
   },
   "dependencies": {
-    "underscore": "*",
+    "lodash": "*",
     "coffee-script": "*"
   },
   "devDependencies": {

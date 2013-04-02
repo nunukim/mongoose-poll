@@ -1,7 +1,12 @@
-_ = require 'underscore'
+_ = require 'lodash'
 
-# 一定時間ごとにクエリを実行し、成功したらdata を、失敗したらerror イベントを発行する。
-# 成功した場合、時間を待たずにもう一度実行する。
+# ### Watcher(checker, interval)
+#
+# interval ミリ秒ごとにcheckerを実行する。
+# checker のcallback(error, data)の結果によって以下の処理をする。
+# - 失敗したらerror イベントを発行してinterval だけ待って再実行。
+# - data がnull ならdrain イベントを発行してinterval だけ待って再実行。
+# - data が非null ならdata イベントを発行してすぐに再実行。
 
 module.exports = class Watcher extends require('events').EventEmitter
   constructor: (@checker, @interval)->
