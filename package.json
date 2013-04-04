@@ -1,6 +1,6 @@
 {
   "name": "mongoose-poll",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "plugin to polling mongoose",
   "main": "lib/plugin.js",
   "scripts": {
